@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActivityTransitionTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_test1">Test1</string>
+</resources>
