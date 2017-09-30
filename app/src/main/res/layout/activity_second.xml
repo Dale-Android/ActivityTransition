@@ -60,6 +60,7 @@
         android:layout_marginBottom="80dp"
         android:scaleType="centerCrop"
         android:transitionName="test_image"
+        android:visibility="gone"
         android:src="@mipmap/ic_launcher"/>
 
 </FrameLayout>

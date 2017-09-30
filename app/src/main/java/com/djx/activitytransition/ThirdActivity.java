@@ -11,6 +11,6 @@ public class ThirdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-        getWindow().setEnterTransition(/*new Slide(Gravity.TOP)*/new Explode());
+        getWindow().setEnterTransition(new Explode());
     }
 }

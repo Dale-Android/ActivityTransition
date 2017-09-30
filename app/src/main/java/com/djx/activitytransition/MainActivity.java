@@ -40,22 +40,12 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
 
         mGroup.setOnCheckedChangeListener(this);
         mGroupType.setOnCheckedChangeListener(this);
-
-//        setExitSharedElementCallback(new SharedElementCallback() {
-//            @Override
-//            public void onSharedElementEnd(List<String> sharedElementNames, List<View> sharedElements, List<View> sharedElementSnapshots) {
-//                super.onSharedElementEnd(sharedElementNames, sharedElements, sharedElementSnapshots);
-//                ((TextView) mHello).setText("hello");
-//            }
-//        });
     }
 
     public void onClick(View v) {
         switch (mGroup.getCheckedRadioButtonId()) {
             case R.id.text: {
                 Intent intent = new Intent(this, SecondActivity.class);
-//                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(this, mHello, "test_text");
-//                startActivity(intent, options.toBundle());
 
                 ActivityOptions options;
                 switch (mType) {
