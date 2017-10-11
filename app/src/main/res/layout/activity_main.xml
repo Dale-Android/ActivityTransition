@@ -13,52 +13,12 @@
         android:onClick="onClick"
         android:text="start" />
 
-
-    <RadioGroup
-        android:id="@+id/group"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/start"
-        android:visibility="gone"
-        android:checkedButton="@id/text">
-
-        <RadioButton
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Text" />
-
-        <RadioButton
-            android:id="@+id/picture"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Picture" />
-
-        <RadioButton
-            android:id="@+id/text_picture"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Text and Picture" />
-
-    </RadioGroup>
-
-    <View
-        android:id="@+id/line1"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@id/group"
-        android:layout_marginTop="16dp"
-        android:visibility="gone"
-        android:layout_marginBottom="16dp"
-        android:background="#888"/>
-
     <RadioGroup
         android:id="@+id/group_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:layout_below="@id/line1"
-        android:checkedButton="@id/enter_exit">
+        android:layout_below="@id/start"
+        android:checkedButton="@id/shared">
 
         <RadioButton
             android:id="@+id/enter_exit"
@@ -80,30 +40,39 @@
 
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/hello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:text="Hello"
-        android:textSize="32sp"
-        android:visibility="gone"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="16dp"
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/group_type"
         android:layout_marginBottom="16dp"
-        android:transitionName="test_text" />
+        android:layout_marginTop="16dp"
+        android:background="#888" />
 
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="wrap_content"
+    <RadioGroup
+        android:id="@+id/shared_group"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:visibility="gone"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_below="@id/line1"
+        android:checkedButton="@id/text">
 
+        <RadioButton
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text" />
+
+        <RadioButton
+            android:id="@+id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Picture" />
+
+        <RadioButton
+            android:id="@+id/text_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text and Picture" />
+
+    </RadioGroup>
 </RelativeLayout>

@@ -45,22 +45,28 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:transitionName="test_text"
-        android:textSize="45sp"
+        android:textSize="32sp"
         android:text="Hello"/>
 
-    <!--TODO TextView类型，main里面32sp，这里45sp，shared的时候，就会造成突变（不像Image那样可以平滑渐变）
-        TODO 改成scale比例、相同字体大小，也不行-->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="World"
+        android:textSize="32sp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:transitionName="test_text" />
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_gravity="bottom"
-        android:layout_marginLeft="80dp"
-        android:layout_marginBottom="80dp"
-        android:scaleType="centerCrop"
-        android:transitionName="test_image"
-        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="bottom|right"
         android:src="@mipmap/ic_launcher"/>
 
 </FrameLayout>
